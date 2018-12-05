@@ -1,5 +1,2 @@
-<<<<<<< HEAD
-# Primer trabajo VHDL 
-=======
-# Trabajo weeee VHDL 
+mpdjs´bñdfs
 >>>>>>> Buf-Fix
