@@ -1,1 +1,1 @@
-# Primer trabavbdofpsjb´psdo VHDL 
+﻿# Primer tra´psdo VHDL 
