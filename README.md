@@ -1,1 +1,1 @@
-# Trabajo de los cojones VHDL 
+# Primer trabajo VHDL 
