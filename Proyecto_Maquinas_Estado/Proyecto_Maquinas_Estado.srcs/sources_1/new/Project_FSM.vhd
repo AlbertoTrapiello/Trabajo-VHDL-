@@ -32,7 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity maquina_estados is
-    GENERIC(N:integer:=5);
+    GENERIC(N:integer:=5);--tamaño de la clave
     Port ( reset : in STD_LOGIC;
            clk, mode, start : in STD_LOGIC; --mode: Seleccionar modo pulsadores (0) o switches (1) 
            --start: Pasar del estado de reposo al de selección de modos. Sirve para mostrar cuando se va a introducir la combinación.
