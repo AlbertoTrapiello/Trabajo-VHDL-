@@ -2,10 +2,10 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Dec  7 12:54:24 2018
-# Process ID: 69368
+# Start of session at: Thu Dec  6 20:49:34 2018
+# Process ID: 182912
 # Current directory: D:/Universidad/Cuarto/SED/Trabajo SED VHDL/Trabajo-VHDL-/Proyecto_Maquinas_Estado
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent107828 D:\Universidad\Cuarto\SED\Trabajo SED VHDL\Trabajo-VHDL-\Proyecto_Maquinas_Estado\Proyecto_Maquinas_Estado.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent128316 D:\Universidad\Cuarto\SED\Trabajo SED VHDL\Trabajo-VHDL-\Proyecto_Maquinas_Estado\Proyecto_Maquinas_Estado.xpr
 # Log file: D:/Universidad/Cuarto/SED/Trabajo SED VHDL/Trabajo-VHDL-/Proyecto_Maquinas_Estado/vivado.log
 # Journal file: D:/Universidad/Cuarto/SED/Trabajo SED VHDL/Trabajo-VHDL-/Proyecto_Maquinas_Estado\vivado.jou
 #-----------------------------------------------------------
@@ -21,7 +21,7 @@ WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'D:/Univer
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
-open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 821.113 ; gain = 79.891
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 818.188 ; gain = 80.016
 update_compile_order -fileset sources_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Fri Dec  7 12:54:52 2018...
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  6 21:00:09 2018...
