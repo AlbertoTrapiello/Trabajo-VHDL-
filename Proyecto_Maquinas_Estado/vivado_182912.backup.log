@@ -2,13 +2,15 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Dec  7 12:51:12 2018
-# Process ID: 138924
+# Start of session at: Thu Dec  6 20:49:34 2018
+# Process ID: 182912
 # Current directory: D:/Universidad/Cuarto/SED/Trabajo SED VHDL/Trabajo-VHDL-/Proyecto_Maquinas_Estado
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent135348 D:\Universidad\Cuarto\SED\Trabajo SED VHDL\Trabajo-VHDL-\Proyecto_Maquinas_Estado\Proyecto_Maquinas_Estado.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent128316 D:\Universidad\Cuarto\SED\Trabajo SED VHDL\Trabajo-VHDL-\Proyecto_Maquinas_Estado\Proyecto_Maquinas_Estado.xpr
 # Log file: D:/Universidad/Cuarto/SED/Trabajo SED VHDL/Trabajo-VHDL-/Proyecto_Maquinas_Estado/vivado.log
 # Journal file: D:/Universidad/Cuarto/SED/Trabajo SED VHDL/Trabajo-VHDL-/Proyecto_Maquinas_Estado\vivado.jou
-#-----------------------------------------------------------sstart_guioopen_project {D:/Universidad/Cuarto/SED/Trabajo SED VHDL/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.xpr}
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Universidad/Cuarto/SED/Trabajo SED VHDL/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.xpr}
 INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
 Current project path is 'D:/Universidad/Cuarto/SED/Trabajo SED VHDL/Trabajo-VHDL-/Proyecto_Maquinas_Estado'
 INFO: [Project 1-313] Project file moved from 'C:/Users/Fran/Proyecto_Maquinas_Estado' since last save.
@@ -19,11 +21,7 @@ WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'D:/Univer
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
-open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 810.004 ; gain = 57.488
-update_compile_order -fileset sources_1exit
-INFO: [Common 17-206] Exiting Vivado at Fri Dec  7 12:52:18 2018...
-
-as been returned to its previous state.
-INFO: [Common 17-344] 'open_project' was cancelled
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 818.188 ; gain = 80.016
+update_compile_order -fileset sources_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Fri Dec  7 12:51:55 2018...
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  6 21:00:09 2018...
