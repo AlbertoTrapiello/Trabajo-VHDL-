@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Dec  8 14:16:15 2018
+# Process ID: 28140
+# Current directory: C:/Users/petra/Desktop/Trabajo-VHDL--Lydia/Proyecto_Maquinas_Estado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26060 C:\Users\petra\Desktop\Trabajo-VHDL--Lydia\Proyecto_Maquinas_Estado\Proyecto_Maquinas_Estado.xpr
+# Log file: C:/Users/petra/Desktop/Trabajo-VHDL--Lydia/Proyecto_Maquinas_Estado/vivado.log
+# Journal file: C:/Users/petra/Desktop/Trabajo-VHDL--Lydia/Proyecto_Maquinas_Estado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/petra/Desktop/Trabajo-VHDL--Lydia/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.xpr
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse C:/Users/petra/Desktop/Trabajo-VHDL--Lydia/Proyecto_Maquinas_Estado/Nexys4DDR_Master.xdc
+update_compile_order -fileset sim_1
+launch_simulation
+source maquina_estados_tb.tcl
+set_property -name {xsim.simulate.runtime} -value {500ns} -objects [get_filesets sim_1]
+update_ip_catalog
+close_sim
+launch_simulation
+source maquina_estados_tb.tcl
+set_property -name {xsim.simulate.runtime} -value {3000ns} -objects [get_filesets sim_1]
+update_ip_catalog
+update_ip_catalog
+close_sim
+launch_simulation
+source maquina_estados_tb.tcl
+close_sim
