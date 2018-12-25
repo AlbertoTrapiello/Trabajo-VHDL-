@@ -2,57 +2,13 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Tue Dec 25 18:14:28 2018
-# Process ID: 13392
-# Current directory: C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5052 C:\Users\Fran\Documents\GitHub\Trabajo-VHDL-\Proyecto_Maquinas_Estado\Proyecto_Maquinas_Estado.xpr
-# Log file: C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/vivado.log
-# Journal file: C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado\vivado.jou
+# Start of session at: Tue Dec 25 18:31:26 2018
+# Process ID: 16908
+# Current directory: C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.runs/c_counter_binary_0_synth_1
+# Command line: vivado.exe -log c_counter_binary_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source c_counter_binary_0.tcl
+# Log file: C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.runs/c_counter_binary_0_synth_1/c_counter_binary_0.vds
+# Journal file: C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.runs/c_counter_binary_0_synth_1\vivado.jou
 #-----------------------------------------------------------
-start_gui
-open_project C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.xpr
-Scanning sources...
-Finished scanning sources
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
-open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 866.695 ; gain = 117.797
-update_compile_order -fileset sources_1
-create_ip -name c_counter_binary -vendor xilinx.com -library ip -version 12.0 -module_name c_counter_binary_0 -dir c:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/ip
-set_property -dict [list CONFIG.Output_Width {1} CONFIG.SCLR {true} CONFIG.Load {true}] [get_ips c_counter_binary_0]
-generate_target {instantiation_template} [get_files c:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'c_counter_binary_0'...
-update_compile_order -fileset sources_1
-generate_target all [get_files  c:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0.xci]
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'c_counter_binary_0'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'c_counter_binary_0'...
-INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'c_counter_binary_0'...
-catch { config_ip_cache -export [get_ips -all c_counter_binary_0] }
-export_ip_user_files -of_objects [get_files c:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0.xci] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0.xci]
-launch_runs -jobs 6 c_counter_binary_0_synth_1
-[Tue Dec 25 18:31:24 2018] Launched c_counter_binary_0_synth_1...
-Run output will be captured here: C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.runs/c_counter_binary_0_synth_1/runme.log
-INFO: [Vivado 12-4357] Exporting simulation files for 'c_counter_binary_0'... please wait for 'c_counter_binary_0_synth_1' run to finish...
-wait_on_run c_counter_binary_0_synth_1
-[Tue Dec 25 18:31:24 2018] Waiting for c_counter_binary_0_synth_1 to finish...
-[Tue Dec 25 18:31:29 2018] Waiting for c_counter_binary_0_synth_1 to finish...
-[Tue Dec 25 18:31:34 2018] Waiting for c_counter_binary_0_synth_1 to finish...
-[Tue Dec 25 18:31:39 2018] Waiting for c_counter_binary_0_synth_1 to finish...
-[Tue Dec 25 18:31:49 2018] Waiting for c_counter_binary_0_synth_1 to finish...
-[Tue Dec 25 18:31:59 2018] Waiting for c_counter_binary_0_synth_1 to finish...
-[Tue Dec 25 18:32:09 2018] Waiting for c_counter_binary_0_synth_1 to finish...
-[Tue Dec 25 18:32:19 2018] Waiting for c_counter_binary_0_synth_1 to finish...
-
-*** Running vivado
-    with args -log c_counter_binary_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source c_counter_binary_0.tcl
-
-
-****** Vivado v2018.2 (64-bit)
-  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
-  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
-
 source c_counter_binary_0.tcl -notrace
 Command: synth_design -top c_counter_binary_0 -part xc7a100tcsg324-1 -mode out_of_context
 Starting synth_design
@@ -332,11 +288,3 @@ INFO: [Common 17-1381] The checkpoint 'C:/Users/Fran/Documents/GitHub/Trabajo-VH
 INFO: [runtcl-4] Executing : report_utilization -file c_counter_binary_0_utilization_synth.rpt -pb c_counter_binary_0_utilization_synth.pb
 report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 873.191 ; gain = 0.000
 INFO: [Common 17-206] Exiting Vivado at Tue Dec 25 18:32:15 2018...
-[Tue Dec 25 18:32:19 2018] c_counter_binary_0_synth_1 finished
-wait_on_run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:55 . Memory (MB): peak = 942.309 ; gain = 3.070
-export_simulation -of_objects [get_files c:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0.xci] -directory C:/Users/Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.ip_user_files -ipstatic_source_dir C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.cache/compile_simlib/modelsim} {questa=C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.cache/compile_simlib/questa} {riviera=C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.cache/compile_simlib/riviera} {activehdl=C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-close [ open C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Decoder.vhd w ]
-add_files C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Decoder.vhd
-update_compile_order -fileset sources_1
-exit
-INFO: [Common 17-206] Exiting Vivado at Tue Dec 25 21:36:56 2018...
