@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="c_counter_binary_0_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1545759083">
+<GenRun Id="c_counter_binary_0_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1546194922">
   <File Type="PA-TCL" Name="c_counter_binary_0.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="c_counter_binary_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="c_counter_binary_0_reports.tcl"/>
@@ -36,9 +36,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

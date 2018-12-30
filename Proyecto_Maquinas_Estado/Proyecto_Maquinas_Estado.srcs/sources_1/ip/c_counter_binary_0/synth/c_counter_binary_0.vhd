@@ -61,8 +61,8 @@ ENTITY c_counter_binary_0 IS
     CLK : IN STD_LOGIC;
     SCLR : IN STD_LOGIC;
     LOAD : IN STD_LOGIC;
-    L : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-    Q : OUT STD_LOGIC_VECTOR(0 DOWNTO 0)
+    L : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+    Q : OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
   );
 END c_counter_binary_0;
 
@@ -102,9 +102,9 @@ ARCHITECTURE c_counter_binary_0_arch OF c_counter_binary_0 IS
       SINIT : IN STD_LOGIC;
       UP : IN STD_LOGIC;
       LOAD : IN STD_LOGIC;
-      L : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+      L : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
       THRESH0 : OUT STD_LOGIC;
-      Q : OUT STD_LOGIC_VECTOR(0 DOWNTO 0)
+      Q : OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
     );
   END COMPONENT c_counter_binary_v12_0_12;
   ATTRIBUTE X_CORE_INFO : STRING;
@@ -112,7 +112,7 @@ ARCHITECTURE c_counter_binary_0_arch OF c_counter_binary_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF c_counter_binary_0_arch : ARCHITECTURE IS "c_counter_binary_0,c_counter_binary_v12_0_12,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF c_counter_binary_0_arch: ARCHITECTURE IS "c_counter_binary_0,c_counter_binary_v12_0_12,{x_ipProduct=Vivado 2018.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=c_counter_binary,x_ipVersion=12.0,x_ipCoreRevision=12,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL,C_IMPLEMENTATION=0,C_VERBOSITY=0,C_XDEVICEFAMILY=artix7,C_WIDTH=1,C_HAS_CE=0,C_HAS_SCLR=1,C_RESTRICT_COUNT=0,C_COUNT_TO=1,C_COUNT_BY=1,C_COUNT_MODE=0,C_THRESH0_VALUE=1,C_CE_OVERRIDES_SYNC=0,C_HAS_THRESH0=0,C_HAS_LOAD=1,C_LOAD_LOW=0,C_LATENCY=1,C_FB_LATENCY=0,C_AINIT_VAL=0,C_SINIT_VAL=0,C_" & 
+  ATTRIBUTE CORE_GENERATION_INFO OF c_counter_binary_0_arch: ARCHITECTURE IS "c_counter_binary_0,c_counter_binary_v12_0_12,{x_ipProduct=Vivado 2018.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=c_counter_binary,x_ipVersion=12.0,x_ipCoreRevision=12,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL,C_IMPLEMENTATION=0,C_VERBOSITY=0,C_XDEVICEFAMILY=artix7,C_WIDTH=3,C_HAS_CE=0,C_HAS_SCLR=1,C_RESTRICT_COUNT=0,C_COUNT_TO=1,C_COUNT_BY=1,C_COUNT_MODE=0,C_THRESH0_VALUE=1,C_CE_OVERRIDES_SYNC=0,C_HAS_THRESH0=0,C_HAS_LOAD=1,C_LOAD_LOW=0,C_LATENCY=1,C_FB_LATENCY=0,C_AINIT_VAL=0,C_SINIT_VAL=0,C_" & 
 "SCLR_OVERRIDES_SSET=1,C_HAS_SSET=0,C_HAS_SINIT=0}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
@@ -132,7 +132,7 @@ BEGIN
       C_IMPLEMENTATION => 0,
       C_VERBOSITY => 0,
       C_XDEVICEFAMILY => "artix7",
-      C_WIDTH => 1,
+      C_WIDTH => 3,
       C_HAS_CE => 0,
       C_HAS_SCLR => 1,
       C_RESTRICT_COUNT => 0,

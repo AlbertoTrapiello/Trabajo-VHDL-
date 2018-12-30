@@ -2,28 +2,72 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sun Dec 30 19:35:25 2018
-# Process ID: 12092
-# Current directory: C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.runs/c_counter_binary_0_synth_1
-# Command line: vivado.exe -log c_counter_binary_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source c_counter_binary_0.tcl
-# Log file: C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.runs/c_counter_binary_0_synth_1/c_counter_binary_0.vds
-# Journal file: C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.runs/c_counter_binary_0_synth_1\vivado.jou
+# Start of session at: Tue Dec 25 18:14:28 2018
+# Process ID: 13392
+# Current directory: C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5052 C:\Users\Fran\Documents\GitHub\Trabajo-VHDL-\Proyecto_Maquinas_Estado\Proyecto_Maquinas_Estado.xpr
+# Log file: C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/vivado.log
+# Journal file: C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado\vivado.jou
 #-----------------------------------------------------------
+start_gui
+open_project C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 866.695 ; gain = 117.797
+update_compile_order -fileset sources_1
+create_ip -name c_counter_binary -vendor xilinx.com -library ip -version 12.0 -module_name c_counter_binary_0 -dir c:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/ip
+set_property -dict [list CONFIG.Output_Width {1} CONFIG.SCLR {true} CONFIG.Load {true}] [get_ips c_counter_binary_0]
+generate_target {instantiation_template} [get_files c:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'c_counter_binary_0'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'c_counter_binary_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'c_counter_binary_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'c_counter_binary_0'...
+catch { config_ip_cache -export [get_ips -all c_counter_binary_0] }
+export_ip_user_files -of_objects [get_files c:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0.xci]
+launch_runs -jobs 6 c_counter_binary_0_synth_1
+[Tue Dec 25 18:31:24 2018] Launched c_counter_binary_0_synth_1...
+Run output will be captured here: C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.runs/c_counter_binary_0_synth_1/runme.log
+INFO: [Vivado 12-4357] Exporting simulation files for 'c_counter_binary_0'... please wait for 'c_counter_binary_0_synth_1' run to finish...
+wait_on_run c_counter_binary_0_synth_1
+[Tue Dec 25 18:31:24 2018] Waiting for c_counter_binary_0_synth_1 to finish...
+[Tue Dec 25 18:31:29 2018] Waiting for c_counter_binary_0_synth_1 to finish...
+[Tue Dec 25 18:31:34 2018] Waiting for c_counter_binary_0_synth_1 to finish...
+[Tue Dec 25 18:31:39 2018] Waiting for c_counter_binary_0_synth_1 to finish...
+[Tue Dec 25 18:31:49 2018] Waiting for c_counter_binary_0_synth_1 to finish...
+[Tue Dec 25 18:31:59 2018] Waiting for c_counter_binary_0_synth_1 to finish...
+[Tue Dec 25 18:32:09 2018] Waiting for c_counter_binary_0_synth_1 to finish...
+[Tue Dec 25 18:32:19 2018] Waiting for c_counter_binary_0_synth_1 to finish...
+
+*** Running vivado
+    with args -log c_counter_binary_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source c_counter_binary_0.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
 source c_counter_binary_0.tcl -notrace
 Command: synth_design -top c_counter_binary_0 -part xc7a100tcsg324-1 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 15484 
+INFO: Helper process launched with PID 16532 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 458.824 ; gain = 97.633
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 458.676 ; gain = 97.227
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'c_counter_binary_0' [c:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/ip/c_counter_binary_0/synth/c_counter_binary_0.vhd:69]
 	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
 	Parameter C_VERBOSITY bound to: 0 - type: integer 
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
-	Parameter C_WIDTH bound to: 3 - type: integer 
+	Parameter C_WIDTH bound to: 1 - type: integer 
 	Parameter C_HAS_CE bound to: 0 - type: integer 
 	Parameter C_HAS_SCLR bound to: 1 - type: integer 
 	Parameter C_RESTRICT_COUNT bound to: 0 - type: integer 
@@ -43,31 +87,21 @@ INFO: [Synth 8-638] synthesizing module 'c_counter_binary_0' [c:/Users/Fran/Docu
 	Parameter C_HAS_SSET bound to: 0 - type: integer 
 	Parameter C_HAS_SINIT bound to: 0 - type: integer 
 INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_12' declared at 'c:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/ip/c_counter_binary_0/hdl/c_counter_binary_v12_0_vh_rfs.vhd:2130' bound to instance 'U0' of component 'c_counter_binary_v12_0_12' [c:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/ip/c_counter_binary_0/synth/c_counter_binary_0.vhd:130]
-INFO: [Synth 8-256] done synthesizing module 'c_counter_binary_0' (8#1) [c:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/ip/c_counter_binary_0/synth/c_counter_binary_0.vhd:69]
-WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv has unconnected port CE
-WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv has unconnected port AINIT
-WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv has unconnected port ACLR
-WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv has unconnected port ASET
-WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv has unconnected port SINIT
-WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv has unconnected port SSET
-WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy has unconnected port add
-WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy has unconnected port c_in
-WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy has unconnected port ce
-WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy has unconnected port sset
-WARNING: [Synth 8-3331] design c_addsub_v12_0_12_lut6_legacy has unconnected port sinit
-WARNING: [Synth 8-3331] design c_addsub_v12_0_12_legacy has unconnected port c_in
-WARNING: [Synth 8-3331] design c_addsub_v12_0_12_legacy has unconnected port b_in
-WARNING: [Synth 8-3331] design c_addsub_v12_0_12_legacy has unconnected port a_signed
-WARNING: [Synth 8-3331] design c_addsub_v12_0_12_legacy has unconnected port b_signed
-WARNING: [Synth 8-3331] design c_counter_binary_v12_0_12_legacy has unconnected port up
-WARNING: [Synth 8-3331] design c_counter_binary_v12_0_12_legacy has unconnected port ce
-WARNING: [Synth 8-3331] design c_counter_binary_v12_0_12_legacy has unconnected port iv[2]
-WARNING: [Synth 8-3331] design c_counter_binary_v12_0_12_legacy has unconnected port iv[1]
-WARNING: [Synth 8-3331] design c_counter_binary_v12_0_12_legacy has unconnected port iv[0]
-WARNING: [Synth 8-3331] design c_counter_binary_v12_0_12_legacy has unconnected port sset
-WARNING: [Synth 8-3331] design c_counter_binary_v12_0_12_legacy has unconnected port sinit
+INFO: [Synth 8-256] done synthesizing module 'c_counter_binary_0' (6#1) [c:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/ip/c_counter_binary_0/synth/c_counter_binary_0.vhd:69]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized1 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized1 has unconnected port SINIT
+WARNING: [Synth 8-3331] design fabric_counter has unconnected port N_TC
+WARNING: [Synth 8-3331] design fabric_counter has unconnected port UP
+WARNING: [Synth 8-3331] design xbip_counter_v3_0_5_viv has unconnected port CE
+WARNING: [Synth 8-3331] design c_counter_binary_v12_0_12_viv has unconnected port SSET
+WARNING: [Synth 8-3331] design c_counter_binary_v12_0_12_viv has unconnected port SINIT
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 522.113 ; gain = 160.922
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 529.137 ; gain = 167.688
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -80,13 +114,11 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 522.113 ; gain = 160.922
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 529.137 ; gain = 167.688
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 522.113 ; gain = 160.922
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 529.137 ; gain = 167.688
 ---------------------------------------------------------------------------------
-INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -101,26 +133,26 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 804.734 ; gain = 1.512
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.136 . Memory (MB): peak = 806.383 ; gain = 1.566
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 804.734 ; gain = 443.543
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 806.383 ; gain = 444.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 804.734 ; gain = 443.543
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 806.383 ; gain = 444.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.runs/c_counter_binary_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 804.734 ; gain = 443.543
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 806.383 ; gain = 444.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 804.734 ; gain = 443.543
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 806.383 ; gain = 444.934
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -158,7 +190,7 @@ WARNING: [Synth 8-3331] design c_counter_binary_v12_0_12_viv has unconnected por
 WARNING: [Synth 8-3331] design c_counter_binary_v12_0_12_viv has unconnected port SINIT
 WARNING: [Synth 8-3331] design c_counter_binary_v12_0_12_viv has unconnected port UP
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 804.734 ; gain = 443.543
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 806.383 ; gain = 444.934
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -170,13 +202,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 843.922 ; gain = 482.730
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 848.770 ; gain = 487.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 853.527 ; gain = 492.336
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 858.383 ; gain = 496.934
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -188,7 +220,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 853.527 ; gain = 492.336
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 858.383 ; gain = 496.934
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -212,7 +244,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 853.527 ; gain = 492.336
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 858.383 ; gain = 496.934
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -225,7 +257,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 853.527 ; gain = 492.336
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 858.383 ; gain = 496.934
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -237,25 +269,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 853.527 ; gain = 492.336
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 858.383 ; gain = 496.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 853.527 ; gain = 492.336
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 858.383 ; gain = 496.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 853.527 ; gain = 492.336
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 858.383 ; gain = 496.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 853.527 ; gain = 492.336
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 858.383 ; gain = 496.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -268,39 +300,43 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+------+------+
-|      |Cell  |Count |
-+------+------+------+
-|1     |LUT3  |     3|
-|2     |MUXCY |     2|
-|3     |XORCY |     3|
-|4     |FDRE  |     3|
-+------+------+------+
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT3 |     1|
+|2     |LUT4 |     1|
+|3     |FDRE |     2|
++------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 853.527 ; gain = 492.336
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 858.383 ; gain = 496.934
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 853.527 ; gain = 209.715
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 853.527 ; gain = 492.336
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 858.383 ; gain = 219.688
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 858.383 ; gain = 496.934
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1 instances were transformed.
-  (MUXCY,XORCY) => CARRY4: 1 instances
+No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-16 Infos, 26 Warnings, 0 Critical Warnings and 0 Errors encountered.
+12 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 869.902 ; gain = 520.180
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 873.191 ; gain = 523.215
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp' has been generated.
 INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0.xci
-INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+INFO: [Coretcl 2-1174] Renamed 5 cell refs.
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.runs/c_counter_binary_0_synth_1/c_counter_binary_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file c_counter_binary_0_utilization_synth.rpt -pb c_counter_binary_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 869.902 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Dec 30 19:36:10 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 873.191 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 25 18:32:15 2018...
+[Tue Dec 25 18:32:19 2018] c_counter_binary_0_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:55 . Memory (MB): peak = 942.309 ; gain = 3.070
+export_simulation -of_objects [get_files c:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/ip/c_counter_binary_0/c_counter_binary_0.xci] -directory C:/Users/Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.ip_user_files -ipstatic_source_dir C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.cache/compile_simlib/modelsim} {questa=C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.cache/compile_simlib/questa} {riviera=C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.cache/compile_simlib/riviera} {activehdl=C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close [ open C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Decoder.vhd w ]
+add_files C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Decoder.vhd
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 25 21:36:56 2018...

@@ -61,8 +61,8 @@ ENTITY c_counter_binary_0 IS
     CLK : IN STD_LOGIC;
     SCLR : IN STD_LOGIC;
     LOAD : IN STD_LOGIC;
-    L : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-    Q : OUT STD_LOGIC_VECTOR(0 DOWNTO 0)
+    L : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+    Q : OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
   );
 END c_counter_binary_0;
 
@@ -102,9 +102,9 @@ ARCHITECTURE c_counter_binary_0_arch OF c_counter_binary_0 IS
       SINIT : IN STD_LOGIC;
       UP : IN STD_LOGIC;
       LOAD : IN STD_LOGIC;
-      L : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+      L : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
       THRESH0 : OUT STD_LOGIC;
-      Q : OUT STD_LOGIC_VECTOR(0 DOWNTO 0)
+      Q : OUT STD_LOGIC_VECTOR(2 DOWNTO 0)
     );
   END COMPONENT c_counter_binary_v12_0_12;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -125,7 +125,7 @@ BEGIN
       C_IMPLEMENTATION => 0,
       C_VERBOSITY => 0,
       C_XDEVICEFAMILY => "artix7",
-      C_WIDTH => 1,
+      C_WIDTH => 3,
       C_HAS_CE => 0,
       C_HAS_SCLR => 1,
       C_RESTRICT_COUNT => 0,

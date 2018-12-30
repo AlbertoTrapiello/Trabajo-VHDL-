@@ -58,8 +58,8 @@ c_counter_binary_0 your_instance_name (
   .CLK(CLK),    // input wire CLK
   .SCLR(SCLR),  // input wire SCLR
   .LOAD(LOAD),  // input wire LOAD
-  .L(L),        // input wire [0 : 0] L
-  .Q(Q)        // output wire [0 : 0] Q
+  .L(L),        // input wire [2 : 0] L
+  .Q(Q)        // output wire [2 : 0] Q
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

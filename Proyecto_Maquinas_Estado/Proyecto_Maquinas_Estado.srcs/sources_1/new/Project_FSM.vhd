@@ -33,19 +33,25 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity maquina_estados is
     GENERIC(N:integer:=5);--tamaño de la clave
-    Port ( reset : in STD_LOGIC;
-           clk, mode, start : in STD_LOGIC; --mode: Seleccionar modo pulsadores (0) o switches (1) 
+    Port ( reset : in STD_LOGIC;--SEñal de reset activa a nivel alto
+           clk, mode, start, finish : in STD_LOGIC; --mode: Seleccionar modo pulsadores (0) o switches (1) 
            --start: Pasar del estado de reposo al de selección de modos. Sirve para mostrar cuando se va a introducir la combinación.
+           --finish: Para mostrar cuando se ha terminado de introducir la combinación.
            x,y : in STD_LOGIC_VECTOR (0 to N-1);--x: Entrada Pulsadores ------ y: Entrada Switches
-           led : out STD_LOGIC);-- Salida a través de un LED. Posteriormente se podría añadir a su vez un mensaje por el display. 
+           count_puls, count_switches: in INTEGER RANGE 0 TO N;
+           led:out STD_LOGIC_VECTOR(0 TO 1));-- Salida a dos leds. led[0] es el led que indica si la combinación es correcta y 
+           --led[1] indica si la combinación es incorrecta.
 end maquina_estados;
 
 --Opcion: Incluir otro led de incorrecto. (Salida)
 
 architecture Behavioral of maquina_estados is
 
-TYPE state_type IS (reposo, mode_sel, first_ok, second_ok, third_ok, fourth_ok, fifth_ok, --Estados pulsadores
+TYPE state_type IS (reposo, mode_sel, incorrecto, terminado, --Estados comunes
+first_ok, second_ok, third_ok, fourth_ok, fifth_ok, --Estados pulsadores
 first_switch_ok, second_switch_ok, third_switch_ok, fourth_switch_ok, fifth_switch_ok); --Estados switches
+
+--NOTA: INICIALIZAR SEÑALES A SU VALOR HABITUAL PARA EVITAR FALLOS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 SIGNAL state, next_state: state_type;
 
@@ -65,25 +71,27 @@ END PROCESS;
 OUTPUT_DECODE: PROCESS (state)--PROCESS encargado de actualizar la salida en función del estado.
 BEGIN
     CASE (state) is
-        WHEN reposo => led <= '0';
-        WHEN mode_sel => led<= '0';
+        WHEN reposo => led <= "00";
+        WHEN mode_sel => led<= "00";
+        WHEN incorrecto => led<="01";
+        WHEN terminado => led<="10";
         --Salidas para estados pulsadores
-        WHEN first_ok => led<= '0';
-        WHEN second_ok => led<= '0';
-        WHEN third_ok => led<= '0';
-        WHEN fourth_ok => led<= '0';
-        WHEN fifth_ok => led<= '1';
+        WHEN first_ok => led<= "00";
+        WHEN second_ok => led<= "00";
+        WHEN third_ok => led<= "00";
+        WHEN fourth_ok => led<= "00";
+        WHEN fifth_ok => led<= "00";
         --Salidas para estados switches
-        WHEN first_switch_ok => led<= '0';
-        WHEN second_switch_ok => led<= '0';
-        WHEN third_switch_ok => led<= '0';
-        WHEN fourth_switch_ok => led<= '0';
-        WHEN fifth_switch_ok => led<= '1';
-        WHEN OTHERS => led <= '0';
+        WHEN first_switch_ok => led<= "00";
+        WHEN second_switch_ok => led<= "00";
+        WHEN third_switch_ok => led<= "00";
+        WHEN fourth_switch_ok => led<= "00";
+        WHEN fifth_switch_ok => led<= "00";
+        WHEN OTHERS => led <= "00";
     END CASE;
 END PROCESS;
 
-NEXT_STATE_DECODE: PROCESS (state, x, y, start)
+NEXT_STATE_DECODE: PROCESS (state, x, y, start, finish)
 BEGIN
     --next_state <= reposo;
     CASE (state) is
@@ -95,34 +103,46 @@ BEGIN
             IF (mode = '0') THEN
                 IF(x="10000") THEN 
                 next_state <= first_ok;
+                --haceR LO DE FINISH, meter el valor del contador correspondiente también.
+--                    IF(finish='1') THEN
+--                    next_state <= terminado;
+--                    END IF;
+                ELSIF (reset='0') THEN 
+                next_state <= incorrecto;
                 END IF;
-            ELSIF (mode = '1' AND y="10000") THEN 
-                next_state <= first_switch_ok;
             END IF;
+            IF (mode = '1') THEN 
+                IF(y="10000") THEN 
+                next_state <= first_switch_ok;
+                ELSIF (reset='0') THEN 
+                next_state <= incorrecto;
+                END IF;
+            END IF;
+ --NO SE HACE WHEN incorrecto, YA QUE SOLO HACE UNA TRANSICIÓN DE ESTADO CUANDO reset='1' Y YA SE CONTEMPLA ESA POSIBILIDAD ANTERIORMENTE.
        -- Modo pulsadores:
         WHEN first_ok =>
             IF (x="01000") THEN 
                 next_state <= second_ok;
-            ELSIF(reset='0') THEN 
-                next_state <= mode_sel;
+            ELSIF(reset='0') THEN --Si x no es igual a la 01000 y reset =0
+                next_state <= incorrecto;--Se pasa a incorrecto
             END IF;
         WHEN second_ok =>
             IF (x="00100") THEN 
                 next_state <= third_ok;
             ELSIF(reset='0') THEN 
-                next_state <= mode_sel;
+                next_state <= incorrecto;
             END IF;
         WHEN third_ok =>
             IF (x="00010") THEN 
                 next_state <= fourth_ok;
             ELSIF(reset='0') THEN 
-                next_state <= mode_sel;           
+                next_state <= incorrecto;           
             END IF;
         WHEN fourth_ok =>
             IF (x="00001") THEN 
                 next_state <= fifth_ok;
             ELSIF(reset='0') THEN 
-                next_state <= mode_sel;
+                next_state <= incorrecto;
             END IF;
         WHEN fifth_ok =>
             IF (reset='1') THEN
@@ -133,25 +153,25 @@ BEGIN
             IF (y="11000") THEN 
                 next_state <= second_switch_ok;
             ELSIF(reset='0') THEN 
-                next_state <= mode_sel;
+                next_state <= incorrecto;
             END IF;
         WHEN second_switch_ok =>
             IF (y="11100") THEN 
                 next_state <= third_switch_ok;
             ELSIF(reset='0') THEN 
-                next_state <= mode_sel;
+                next_state <= incorrecto;
             END IF;
         WHEN third_switch_ok =>
             IF (y="11110") THEN 
                 next_state <= fourth_switch_ok;
             ELSIF(reset='0') THEN 
-                next_state <= mode_sel;           
+                next_state <= incorrecto;           
             END IF;
         WHEN fourth_switch_ok =>
             IF (y="11111") THEN 
                 next_state <= fifth_switch_ok;
             ELSIF(reset='0') THEN 
-                next_state <= mode_sel;
+                next_state <= incorrecto;
             END IF;
         WHEN fifth_switch_ok =>
             IF (reset='1') THEN
