@@ -123,14 +123,14 @@ BEGIN
             END IF;
         WHEN mode_sel =>
             IF (mode = '0') THEN
-                IF(x="10000") THEN --x(0)='1'
+                IF(x(0)='1') THEN --x(0)='1'
                 next_state <= first_ok;
                 ELSE --x(0)='0'
                 next_state <= incorrecto;
                 END IF;
             END IF;
             IF (mode = '1') THEN 
-                IF(y="10000") THEN --y(0)='1'
+                IF(y(0)='1') THEN --y(0)='1'
                 next_state <= first_switch_ok;
                 ELSE --y(0)='0'
                 next_state <= incorrecto;
@@ -139,26 +139,26 @@ BEGIN
  --NO SE HACE WHEN incorrecto, YA QUE SOLO HACE UNA TRANSICIÓN DE ESTADO CUANDO reset='1' Y YA SE CONTEMPLA ESA POSIBILIDAD ANTERIORMENTE.
        -- Modo pulsadores:
         WHEN first_ok =>
-            IF (x="01000") THEN --x(1)='1'
+            IF (x(1)='1') THEN --x(1)='1'
                 next_state <= second_ok;
             ELSE --x(1)='0'
             --Si x no es igual a la 01000 y reset =0
                 next_state <= incorrecto;--Se pasa a incorrecto
             END IF;
         WHEN second_ok =>
-            IF (x="00100") THEN --x(2)='1'
+            IF (x(2)='1') THEN --x(2)='1'
                 next_state <= third_ok;
             ELSE--x(2)='0'
                 next_state <= incorrecto;
             END IF;
         WHEN third_ok =>
-            IF (x="00010") THEN --x(3)='1'
+            IF (x(3)='1') THEN --x(3)='1'
                 next_state <= fourth_ok;
             ELSE --x(3)='0'
                 next_state <= incorrecto;           
             END IF;
         WHEN fourth_ok =>
-            IF (x="00001" AND count_puls_ok='1') THEN --x(4)='1' y count_puls_ok='1' (es decir, el contador de los pulsadores ha llegado a 5).
+            IF (x(4)='1' AND count_puls_ok='1') THEN --x(4)='1' y count_puls_ok='1' (es decir, el contador de los pulsadores ha llegado a 5).
                 next_state <= fifth_ok;
             ELSE --x(4)='0'
                 next_state <= incorrecto;
@@ -169,25 +169,25 @@ BEGIN
             END IF;
         --Modo Switches:
         WHEN first_switch_ok =>
-            IF (y="11000") THEN --y(1)='1'
+            IF (y(1)='1') THEN --y(1)='1'
                 next_state <= second_switch_ok;
             ELSE--y(1)='0'
                 next_state <= incorrecto;
             END IF;
         WHEN second_switch_ok =>
-            IF (y="11100") THEN --y(2)='1'
+            IF (y(2)='1') THEN --y(2)='1'
                 next_state <= third_switch_ok;
             ELSE --y(2)='0'
                 next_state <= incorrecto;
             END IF;
         WHEN third_switch_ok =>
-            IF (y="11110") THEN --y(3)='1'
+            IF (y(3)='1') THEN --y(3)='1'
                 next_state <= fourth_switch_ok;
             ELSE --y(3)='1'
                 next_state <= incorrecto;           
             END IF;
         WHEN fourth_switch_ok =>
-            IF (y="11111" AND count_switches_ok='1') THEN --y(4)='1'
+            IF (y(4)='1' AND count_switches_ok='1') THEN --y(4)='1' y count_switches_ok='1' (es decir, el contador de los switches ha llegado a 5).
                 next_state <= fifth_switch_ok;
             ELSE--y(4)='0'
                 next_state <= incorrecto;
