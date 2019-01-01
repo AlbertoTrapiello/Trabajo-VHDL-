@@ -32,7 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Decoder is
-    Port ( code: in STD_LOGIC_VECTOR(1 DOWNTO 0);--1ªcomponente: led (salida correcta maquina estados 2ªcomponente: salida led incorrecto maquina estados
+    Port ( code: in STD_LOGIC_VECTOR(0 TO 1);--1ªcomponente: led (salida correcta maquina estados 2ªcomponente: salida led incorrecto maquina estados
            led1 : out STD_LOGIC_VECTOR (6 DOWNTO 0);
            led2 : out STD_LOGIC_VECTOR (6 DOWNTO 0);
            led3 : out STD_LOGIC_VECTOR (6 DOWNTO 0);
