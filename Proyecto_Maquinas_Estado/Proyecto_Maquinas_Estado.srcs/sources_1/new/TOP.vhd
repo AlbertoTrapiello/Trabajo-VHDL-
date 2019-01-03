@@ -71,6 +71,8 @@ SIGNAL code_led: STD_LOGIC_VECTOR (0 TO 1);
     
     --Component contador????
     
+
+    
     component maquina_estados is
     GENERIC(N:integer:=5);--tamaño de la clave
         Port ( reset : in STD_LOGIC;--SEñal de reset activa a nivel alto
