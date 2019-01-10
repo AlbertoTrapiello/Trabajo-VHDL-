@@ -55,6 +55,8 @@ SIGNAL reset_sync, mode_sync, start_sync: STD_LOGIC;
 SIGNAL x: STD_LOGIC_VECTOR(0 TO N-1);
 --Señales intermedias Decoder:
 SIGNAL code_led: STD_LOGIC_VECTOR (0 TO 1); 
+-- Señales intermedias counter:
+SIGNAL count_p, count_s: INTEGER RANGE 0 TO 5;
 
     component sync is
     Port ( sync_in : in STD_LOGIC;
@@ -69,8 +71,12 @@ SIGNAL code_led: STD_LOGIC_VECTOR (0 TO 1);
                btn_out : out STD_LOGIC);--es la salida con el valor definitivo una vez filtrados los rebotes
     end component;
     
-    --Component contador????
     
+    component Counter is
+    Port(reset, mode : in STD_LOGIC;
+        vector: in STD_LOGIC_VECTOR (0 TO N-1);--Vector entrada. (Hay dos instancias: Una para pulsadores (vector=x) y otra para switches (vector=y)).
+        count: out INTEGER range 0 TO N);--Valor de la cuenta entero.
+    end component;
 
     
     component maquina_estados is
@@ -210,10 +216,20 @@ begin
         btn_out => x(4)
         );  
   
- --Instanciaciones counter: ????????????????????????????????????????????????
---    counter_pulsadores:c_counter_binary_0 PORT MAP(
+ --Instanciaciones counter: Una instancia para pulsadores (vector=x) y otra para switches (vector=y).
+    counter_pulsadores:Counter PORT MAP(
+        vector=>x,
+        mode => mode,
+        reset => reset,
+        count => count_p
+    ); 
     
---    ); 
+    counter_switches:Counter PORT MAP(
+            vector=>s_sync,
+            mode => mode,
+            reset => reset,
+            count => count_s
+        ); 
 
 --Instanciación máquina de estados:
     inst_maq_estados: maquina_estados PORT MAP(
@@ -223,8 +239,8 @@ begin
         start => start_sync,
         x => x,
         y => s_sync,
-        --count_switches => ,
-        --count_puls
+        count_switches => count_s,
+        count_puls => count_p,
         led(0) => led_correcto,
         led(0) => code_led(0),
         led(1) => led_incorrecto,

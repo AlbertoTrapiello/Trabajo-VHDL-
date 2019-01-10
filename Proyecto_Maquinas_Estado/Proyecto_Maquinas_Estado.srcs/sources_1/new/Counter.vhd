@@ -35,27 +35,40 @@ use ieee.numeric_std.all;
 entity Counter is
     GENERIC(N:INTEGER:=5);
     Port ( reset, mode : in STD_LOGIC;
-    vector: in STD_LOGIC_VECTOR (0 TO N-1);
+    vector: in STD_LOGIC_VECTOR (0 TO N-1);-- Vector entrada (Hay dos instancias: Una para pulsadores (vector=x) y otra para switches (vector=y).
     count: out INTEGER range 0 TO N
     );
 end Counter;
 
 architecture Behavioral of Counter is
-SIGNAL count_std: STD_LOGIC_VECTOR (0 TO 2);-- Salida en binario, que posteriormente se convertirá a unsigned (count_uns).
-SIGNAL count_uns: UNSIGNED (count_std' range);--Salida en unsigned que posteriormente se convertirá a integer (count):
+--SIGNAL count_std: STD_LOGIC_VECTOR (0 TO 2);-- Salida en binario, que posteriormente se convertirá a unsigned (count_uns).
+--SIGNAL count_uns: UNSIGNED (count_std' range);--Salida en unsigned que posteriormente se convertirá a integer (count):
 begin
 process(vector, reset)
-VARIABLE suma, suma_tot: STD_LOGIC_VECTOR (0 TO 2):="000";
+VARIABLE suma: INTEGER RANGE 0 TO 5:=0;--STD_LOGIC_VECTOR (0 TO 2):="000";
 begin
     IF (reset='1') THEN
-        count_std<="000";
-    ELSIF(mode='0' AND suma_tot<="101") THEN--Modo pulsadores y suma menor que 5.
-        --suma := vector(0)+vector(1)+vector(2)+vector(3)+vector(4);
-        
-    ELSIF(mode='1' AND suma_tot<="101") THEN--Modo SWITCHES y suma menor que 5.    
-    
-    END IF;    
+        suma:=0;
+    ELSIF (suma<5) THEN
+        IF (mode='0') THEN--Modo pulsadores 
+            IF (vector/="00000") THEN--vector distinto de 00000, para que no se incremente la suma 
+        --cuando se ha dejado de pulsar un botón.
+            suma := suma + 1; --Cada vez que el vector de entrada cambia, la suma se incrementa en el modo contadores,
+            --ya que implica que ha habido una nueva pulsación. Ej: 10000 (pulsación 1)--> 01000 (pulsación 2).
+            END IF;
+        ELSE--Modo SWITCHES.    
+            CASE vector IS 
+            WHEN "10000" | "01000" | "00100" | "00010" | "00001" => suma:=1;
+            WHEN "11000" | "10100" | "10010" | "10001" | "01100" | "01010" | "01001" | "00110" | "00101" | "00011" => suma:=2;
+            WHEN "00111" | "01011" | "01101" | "01110" | "10011" | "10101" | "10110" | "11001" | "11010" | "11100" => suma:=3;
+            WHEN "11110" | "01111" | "11011" | "10111" | "11101" => suma:=4;
+            WHEN "11111" => suma:=5;
+            WHEN OTHERS => suma:=0;
+            END CASE; 
+        END IF;
+    END IF; 
+count<=suma;   
 end process;
-count_uns <= unsigned(count_std);
-count <= to_integer(count_uns);
+--count_uns <= unsigned(count_std);
+--count <= to_integer(count_uns);
 end Behavioral;
