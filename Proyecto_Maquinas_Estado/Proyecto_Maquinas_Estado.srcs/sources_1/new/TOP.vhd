@@ -54,7 +54,7 @@ SIGNAL reset_sync, mode_sync, start_sync: STD_LOGIC;
 -- Señales intermedias Debouncer:
 SIGNAL x: STD_LOGIC_VECTOR(0 TO N-1);
 --Señales intermedias Decoder:
-SIGNAL code_led: STD_LOGIC_VECTOR (0 TO 1); 
+
 -- Señales intermedias counter:
 SIGNAL count_p, count_s: INTEGER RANGE 0 TO 5;
 
@@ -91,14 +91,6 @@ SIGNAL count_p, count_s: INTEGER RANGE 0 TO 5;
                --led[1] indica si la combinación es incorrecta.
     end component;
     
-    component Decoder is
-    Port ( code: in STD_LOGIC_VECTOR(0 TO 1);--1ªcomponente: led (salida correcta maquina estados 2ªcomponente: salida led incorrecto maquina estados
-               led1 : out STD_LOGIC_VECTOR (6 DOWNTO 0);
-               led2 : out STD_LOGIC_VECTOR (6 DOWNTO 0);
-               led3 : out STD_LOGIC_VECTOR (6 DOWNTO 0);
-               led4 : out STD_LOGIC_VECTOR (6 DOWNTO 0);
-               led5 : out STD_LOGIC_VECTOR (6 DOWNTO 0));
-    end component;
     
 begin
     --Instanciaciones sincronizadores de señales (sync):
@@ -248,13 +240,6 @@ begin
      );
      
 --Instanciación Decoder:
-    inst_Decoder: Decoder PORT MAP(
-        code => code_led,
-        led1 => display1,
-        led2 => display2,
-        led3 => display3,
-        led4 => display4,
-        led5 => display5
-    );
+
          
 end Behavioral;
