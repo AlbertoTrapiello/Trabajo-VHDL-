@@ -97,7 +97,8 @@ SIGNAL count_p, count_s: INTEGER RANGE 0 TO 5;
                led2 : out STD_LOGIC_VECTOR (6 DOWNTO 0);
                led3 : out STD_LOGIC_VECTOR (6 DOWNTO 0);
                led4 : out STD_LOGIC_VECTOR (6 DOWNTO 0);
-               led5 : out STD_LOGIC_VECTOR (6 DOWNTO 0));
+               led5 : out STD_LOGIC_VECTOR (6 DOWNTO 0);
+               led: out STD_LOGIC_VECTOR(0 TO 1));
     end component;
     
 begin
@@ -241,9 +242,9 @@ begin
         y => s_sync,
         count_switches => count_s,
         count_puls => count_p,
-        led(0) => led_correcto,
+        --led(0) => led_correcto,
         led(0) => code_led(0),
-        led(1) => led_incorrecto,
+        --led(1) => led_incorrecto,
         led(1) => code_led(1)
      );
      
@@ -254,7 +255,9 @@ begin
         led2 => display2,
         led3 => display3,
         led4 => display4,
-        led5 => display5
+        led5 => display5,
+        led(0)=>led_correcto,
+        led(1)=>led_incorrecto
     );
          
 end Behavioral;

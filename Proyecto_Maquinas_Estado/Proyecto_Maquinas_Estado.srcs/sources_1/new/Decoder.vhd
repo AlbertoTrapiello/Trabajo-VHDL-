@@ -37,7 +37,8 @@ entity Decoder is
            led2 : out STD_LOGIC_VECTOR (6 DOWNTO 0);
            led3 : out STD_LOGIC_VECTOR (6 DOWNTO 0);
            led4 : out STD_LOGIC_VECTOR (6 DOWNTO 0);
-           led5 : out STD_LOGIC_VECTOR (6 DOWNTO 0));
+           led5 : out STD_LOGIC_VECTOR (6 DOWNTO 0);
+           led: out STD_LOGIC_VECTOR (0 TO 1));
 end Decoder;
 
 architecture Dataflow of Decoder is
@@ -72,5 +73,5 @@ WITH code SELECT
 --       led_1 <= "0001000", led_2 <="1111001", led_3 <="0100000", led_4 <="1001000", led_5 <="0111001" WHEN "10",
 --        "0110000", "0001000", "0001000", "0000001", "0001000" WHEN "01",
 --        "1111111", "1111111", "1111111", "1111111", "1111111" WHEN OTHERS;
-        
+led <= code;        
 end Dataflow;
