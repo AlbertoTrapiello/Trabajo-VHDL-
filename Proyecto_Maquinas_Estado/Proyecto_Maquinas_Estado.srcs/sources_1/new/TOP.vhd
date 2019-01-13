@@ -184,35 +184,35 @@ begin
 --Instanciaciones de Debouncer (para pulsadores):
     inst_debouncer_p_0: Debouncer PORT MAP(
         clk => clk,
-        rst => reset,
+        rst => reset_sync,
         btn_in => p_sync(0),
         btn_out => x(0)
         );
 
     inst_debouncer_p_1: Debouncer PORT MAP(
         clk => clk,
-        rst => reset,
+        rst => reset_sync,
         btn_in => p_sync(1),
         btn_out => x(1)
         );
 
     inst_debouncer_p_2: Debouncer PORT MAP(
         clk => clk,
-        rst => reset,
+        rst => reset_sync,
         btn_in => p_sync(2),
         btn_out => x(2)
         );  
 
     inst_debouncer_p_3: Debouncer PORT MAP(
         clk => clk,
-        rst => reset,
+        rst => reset_sync,
         btn_in => p_sync(3),
         btn_out => x(3)
         );  
 
     inst_debouncer_p_4: Debouncer PORT MAP(
         clk => clk,
-        rst => reset,
+        rst => reset_sync,
         btn_in => p_sync(4),
         btn_out => x(4)
         );  
@@ -220,15 +220,15 @@ begin
  --Instanciaciones counter: Una instancia para pulsadores (vector=x) y otra para switches (vector=y).
     counter_pulsadores:Counter PORT MAP(
         vector=>x,
-        mode => mode,
-        reset => reset,
+        mode => mode_sync,
+        reset => reset_sync,
         count => count_p
     ); 
     
     counter_switches:Counter PORT MAP(
             vector=>s_sync,
-            mode => mode,
-            reset => reset,
+            mode => mode_sync,
+            reset => reset_sync,
             count => count_s
         ); 
 
