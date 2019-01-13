@@ -34,7 +34,7 @@ use IEEE.numeric_std.all;
 
 entity Display is
     Port ( 
-           r_or_e: in STD_LOGIC_VECTOR (2 downto 0);--Variable que determina si es error o right
+           r_or_e: in STD_LOGIC_VECTOR (1 downto 0);--Variable que determina si es error o right
            digctrl : out STD_LOGIC_VECTOR (3 downto 0);
            segment : out STD_LOGIC_VECTOR (6 downto 0));
 end Display;
@@ -72,6 +72,8 @@ Constant error: secuence_vector := (
 
 Constant mux_time: time := 20 ns;--Periodo para cambiar de display de modo que el ojo no lo perciba 
 signal code : STD_LOGIC_VECTOR (3 downto 0);--señal que gestiona la letra que se ha de mostrar en cada instante en los displays
+--Decoder signal
+signal segment_aux: STD_LOGIC_VECTOR (6 downto 0);
 
 begin
 
@@ -80,7 +82,7 @@ Decod: Decoder
     port map 
     (
         code => code,
-        led => segment   
+        led => segment_aux
     );
 --Display secuence
 
@@ -95,9 +97,10 @@ display: process
                 code <= right(i).code; --se le asigna en cada iteración un valor del code correpsondiente a una letra
                 digctrl(i) <= '0'; --se activa el
                 --¡¡¡EL ASSERT NO DEBE QUEDARSE AQUÍ, DEBERÍA HACERSE EN EL TB, PERO AL SER ESTAS UNAS SEÑALES INTERNAS NO SE PODRÍA!!!
-                assert segment = right(i).segment;
+                assert segment_aux = right(i).led;
                     report "[FAILED]: Wrong letter'."
                     severity failure;
+                segment <= segment_aux;
                 wait for mux_time;--Espera un timepo antes de cambiar
             end loop;
         end if;
@@ -109,12 +112,14 @@ display: process
                 code <= error(i).code; --se le asigna en cada iteración un valor del code correpsondiente a una letra
                 digctrl(i) <= '0'; --se activa el 
                 wait for mux_time;--Espera un timepo antes de cambiar
-                assert segment = error(i).segment;
+                assert segment_aux = error(i).led;
                     report "[FAILED]: Wrong letter'."
-                    severity failure;                
+                    severity failure;     
+                segment <= segment_aux;
+                wait for mux_time;               
              end loop;
         end if;
-        digctrl(4) <= '0';
+        digctrl(3) <= '0';
         code <= "1111";
 end process;
 end Behavioral;

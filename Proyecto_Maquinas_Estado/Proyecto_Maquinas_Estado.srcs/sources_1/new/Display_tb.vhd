@@ -40,7 +40,7 @@ architecture Behavioral of Display_tb is
 --Declaración del UUT
 component Display is
     Port ( 
-           r_or_e: in STD_LOGIC_VECTOR (2 downto 0);--Variable que determina si es error o right
+           r_or_e: in STD_LOGIC_VECTOR (1 downto 0);--Variable que determina si es error o right
            digctrl : out STD_LOGIC_VECTOR (3 downto 0);
            segment : out STD_LOGIC_VECTOR (6 downto 0));
 end component;
@@ -53,7 +53,7 @@ END RECORD;
 TYPE secuence_vector IS ARRAY (natural RANGE <>) OF secuence;
 
 --Entradas
-signal r_or_e: STD_LOGIC_VECTOR (2 downto 0);
+signal r_or_e: STD_LOGIC_VECTOR (1 downto 0);
 --Salidas
 signal digctrl : STD_LOGIC_VECTOR (3 downto 0);
 signal segment : STD_LOGIC_VECTOR (6 downto 0);
