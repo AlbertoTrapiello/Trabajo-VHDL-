@@ -1,0 +1,201 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Jan 13 10:40:31 2019
+# Process ID: 13508
+# Current directory: C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11320 C:\Users\Fran\Documents\GitHub\Trabajo-VHDL-\Proyecto_Maquinas_Estado\Proyecto_Maquinas_Estado.xpr
+# Log file: C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/vivado.log
+# Journal file: C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 819.680 ; gain = 135.262
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: TOP
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 929.613 ; gain = 67.746
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:50]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_0' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:40]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:44]
+INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "false" *) [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'sync' (1#1) [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:40]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_1' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:112]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_2' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:118]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_3' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:124]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_4' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:130]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_0' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:136]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_1' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:142]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_2' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:148]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_3' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:154]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_4' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:160]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_reset' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:166]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_mode' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:172]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_start' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:178]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_0' of component 'Debouncer' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:185]
+INFO: [Synth 8-638] synthesizing module 'Debouncer' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (2#1) [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:42]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_1' of component 'Debouncer' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:192]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_2' of component 'Debouncer' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:199]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_3' of component 'Debouncer' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:206]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_4' of component 'Debouncer' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:213]
+INFO: [Synth 8-3491] module 'Counter' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd:35' bound to instance 'counter_pulsadores' of component 'Counter' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:221]
+INFO: [Synth 8-638] synthesizing module 'Counter' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd:43]
+	Parameter N bound to: 5 - type: integer 
+WARNING: [Synth 8-614] signal 'mode' is read in the process but is not in the sensitivity list [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'Counter' (3#1) [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd:43]
+INFO: [Synth 8-3491] module 'Counter' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd:35' bound to instance 'counter_switches' of component 'Counter' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:228]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'maquina_estados' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Project_FSM.vhd:34' bound to instance 'inst_maq_estados' of component 'maquina_estados' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'maquina_estados' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Project_FSM.vhd:48]
+	Parameter N bound to: 5 - type: integer 
+WARNING: [Synth 8-614] signal 'count_puls_ok' is read in the process but is not in the sensitivity list [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Project_FSM.vhd:116]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Project_FSM.vhd:116]
+WARNING: [Synth 8-614] signal 'count_switches_ok' is read in the process but is not in the sensitivity list [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Project_FSM.vhd:116]
+INFO: [Synth 8-256] done synthesizing module 'maquina_estados' (4#1) [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Project_FSM.vhd:48]
+INFO: [Synth 8-3491] module 'Decoder' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Decoder.vhd:34' bound to instance 'inst_Decoder' of component 'Decoder' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:252]
+INFO: [Synth 8-638] synthesizing module 'Decoder' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Decoder.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Decoder' (5#1) [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Decoder.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (6#1) [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:50]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 975.027 ; gain = 113.160
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 975.027 ; gain = 113.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 975.027 ; gain = 113.160
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'disply4'. [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc:75]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc:76]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc:77]
+Finished Parsing XDC File [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 1334.121 ; gain = 472.254
+40 Infos, 5 Warnings, 5 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 1334.121 ; gain = 472.254
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1390.746 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:50]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_0' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:40]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:44]
+INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "false" *) [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'sync' (1#1) [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:40]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_1' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:112]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_2' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:118]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_3' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:124]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_4' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:130]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_0' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:136]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_1' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:142]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_2' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:148]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_3' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:154]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_4' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:160]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_reset' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:166]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_mode' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:172]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_start' of component 'sync' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:178]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_0' of component 'Debouncer' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:185]
+INFO: [Synth 8-638] synthesizing module 'Debouncer' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (2#1) [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:42]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_1' of component 'Debouncer' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:192]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_2' of component 'Debouncer' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:199]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_3' of component 'Debouncer' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:206]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_4' of component 'Debouncer' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:213]
+INFO: [Synth 8-3491] module 'Counter' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd:35' bound to instance 'counter_pulsadores' of component 'Counter' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:221]
+INFO: [Synth 8-638] synthesizing module 'Counter' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd:43]
+	Parameter N bound to: 5 - type: integer 
+WARNING: [Synth 8-614] signal 'mode' is read in the process but is not in the sensitivity list [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'Counter' (3#1) [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd:43]
+INFO: [Synth 8-3491] module 'Counter' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd:35' bound to instance 'counter_switches' of component 'Counter' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:228]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'maquina_estados' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Project_FSM.vhd:34' bound to instance 'inst_maq_estados' of component 'maquina_estados' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'maquina_estados' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Project_FSM.vhd:48]
+	Parameter N bound to: 5 - type: integer 
+WARNING: [Synth 8-614] signal 'count_puls_ok' is read in the process but is not in the sensitivity list [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Project_FSM.vhd:116]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Project_FSM.vhd:116]
+WARNING: [Synth 8-614] signal 'count_switches_ok' is read in the process but is not in the sensitivity list [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Project_FSM.vhd:116]
+INFO: [Synth 8-256] done synthesizing module 'maquina_estados' (4#1) [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Project_FSM.vhd:48]
+INFO: [Synth 8-3491] module 'Decoder' declared at 'C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Decoder.vhd:34' bound to instance 'inst_Decoder' of component 'Decoder' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:252]
+INFO: [Synth 8-638] synthesizing module 'Decoder' [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Decoder.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'Decoder' (5#1) [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Decoder.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (6#1) [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:50]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1407.324 ; gain = 16.578
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1407.324 ; gain = 16.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1407.324 ; gain = 16.578
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'disply4'. [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc:75]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc:76]
+CRITICAL WARNING: [Common 17-69] Command failed: Site cannot be assigned to more than one port [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc:77]
+Finished Parsing XDC File [C:/Users/Fran/Documents/GitHub/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1420.422 ; gain = 29.676
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 13 10:53:21 2019...

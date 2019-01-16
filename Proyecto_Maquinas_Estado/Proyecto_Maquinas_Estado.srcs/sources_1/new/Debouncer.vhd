@@ -45,7 +45,7 @@ begin
 process(clk)--se obliga a entrar con cada cambio de reloj
  begin
 if (clk'event and clk = '1') then --ante el flanco de subida del reloj
-  if (rst = '1') then --en caso de que la señeal reset esté activa 
+  if (rst = '0') then --en caso de que la señeal reset esté activa 
     Q1 <= '0';-- asigna ceros en caso de que esté reseteado
     Q2 <= '0';-- asigna ceros en caso de que esté reseteado
     Q3 <= '0';-- asigna ceros en caso de que esté reseteado

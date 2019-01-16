@@ -47,7 +47,7 @@ begin
 process(vector, reset)
 VARIABLE suma: INTEGER RANGE 0 TO 5:=0;--STD_LOGIC_VECTOR (0 TO 2):="000";
 begin
-    IF (reset='1') THEN
+    IF (reset='0') THEN
         suma:=0;
     ELSIF (suma<5) THEN
         IF (mode='0') THEN--Modo pulsadores 
