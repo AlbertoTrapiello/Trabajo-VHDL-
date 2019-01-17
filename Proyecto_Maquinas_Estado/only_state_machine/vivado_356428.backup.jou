@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Jan 16 15:53:14 2019
+# Process ID: 356428
+# Current directory: C:/Users/petra/Desktop/only_state_machine
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent35360 C:\Users\petra\Desktop\only_state_machine\only_state_machine.xpr
+# Log file: C:/Users/petra/Desktop/only_state_machine/vivado.log
+# Journal file: C:/Users/petra/Desktop/only_state_machine\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/petra/Desktop/only_state_machine/only_state_machine.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+set_property -name {xsim.simulate.runtime} -value {150ns} -objects [get_filesets sim_1]
+update_ip_catalog
+update_ip_catalog
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+launch_simulation
+source only_state_tb.tcl
+run all
+set_property -name {xsim.simulate.runtime} -value {300 ns} -objects [get_filesets sim_1]
+update_ip_catalog
+update_ip_catalog
+close_sim
+launch_simulation
+source only_state_tb.tcl
+close_sim
+launch_simulation
+source only_state_tb.tcl
+close_sim
+launch_simulation
+source only_state_tb.tcl
+close_sim

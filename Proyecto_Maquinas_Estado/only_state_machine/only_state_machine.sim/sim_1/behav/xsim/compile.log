@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/petra/Desktop/only_state_machine/only_state_machine.srcs/sources_1/new/only_state.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity maquina_estados
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/petra/Desktop/only_state_machine/only_state_machine.srcs/sim_1/new/only_state_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity only_state_tb
