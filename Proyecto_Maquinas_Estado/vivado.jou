@@ -2,58 +2,15 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sat Jan 12 11:13:18 2019
-# Process ID: 180188
+# Start of session at: Tue Jan 15 13:06:23 2019
+# Process ID: 467364
 # Current directory: D:/Universidad/Cuarto/SED/Trabajo SED VHDL/Trabajo-VHDL-/Proyecto_Maquinas_Estado
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent191988 D:\Universidad\Cuarto\SED\Trabajo SED VHDL\Trabajo-VHDL-\Proyecto_Maquinas_Estado\Proyecto_Maquinas_Estado.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent466512 D:\Universidad\Cuarto\SED\Trabajo SED VHDL\Trabajo-VHDL-\Proyecto_Maquinas_Estado\Proyecto_Maquinas_Estado.xpr
 # Log file: D:/Universidad/Cuarto/SED/Trabajo SED VHDL/Trabajo-VHDL-/Proyecto_Maquinas_Estado/vivado.log
 # Journal file: D:/Universidad/Cuarto/SED/Trabajo SED VHDL/Trabajo-VHDL-/Proyecto_Maquinas_Estado\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project {D:/Universidad/Cuarto/SED/Trabajo SED VHDL/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.xpr}
 update_compile_order -fileset sources_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top Display_tb [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
+add_files -norecurse D:/Universidad/Cuarto/SED/VHDL/ejr_previos_exm/Cronómetro_clase/Cronómetro_clase.srcs/sources_1/new/div_frec.vhd
 update_compile_order -fileset sources_1
-launch_simulation
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top Display_tb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
-launch_simulation
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top TOP [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top TOP [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sources_1
-close_project
-create_project Display {D:/Universidad/Cuarto/SED/Trabajo SED VHDL/Trabajo-VHDL-/Display} -part xc7k70tfbv676-1
-set_property target_language VHDL [current_project]
-set_property simulator_language VHDL [current_project]
-add_files -norecurse {{D:/Universidad/Cuarto/SED/Trabajo SED VHDL/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display_tb.vhd} {D:/Universidad/Cuarto/SED/Trabajo SED VHDL/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd}}
-update_compile_order -fileset sources_1
-launch_simulation
-launch_simulation
-launch_simulation
-launch_simulation
-launch_simulation
-launch_simulation
-launch_simulation
-source Display_tb.tcl
-close_sim
-launch_simulation
-source Display_tb.tcl
-close_sim

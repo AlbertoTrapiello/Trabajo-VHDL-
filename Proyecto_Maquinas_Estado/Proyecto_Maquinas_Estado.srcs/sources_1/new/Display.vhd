@@ -35,8 +35,10 @@ use IEEE.numeric_std.all;
 entity Display is
     Port ( 
            r_or_e: in STD_LOGIC_VECTOR (1 downto 0);--Variable que determina si es error o right
-           digctrl : out STD_LOGIC_VECTOR (3 downto 0);
-           segment : out STD_LOGIC_VECTOR (6 downto 0));
+           clk: in STD_LOGIC;
+           segment : out STD_LOGIC_VECTOR (6 downto 0);
+           digsel : out STD_LOGIC_VECTOR (4 downto 0));--El digsel(4) va al primero de la siguiente fila
+           
 end Display;
 
 architecture Behavioral of Display is
@@ -46,7 +48,21 @@ component Decoder is
            led : out STD_LOGIC_VECTOR (6 DOWNTO 0));
 end component;
 
---Tipo de dato preparado para comprobar el correcto funcionamiento del decoder
+--Divisor de frecuencia que divide por 1024, creo 
+component div_frec is
+    Generic (N: positive:= 10); 
+    Port ( clk : in STD_LOGIC;
+           CE_N : in STD_LOGIC;
+           clk_div : out STD_LOGIC);
+end component;
+
+Constant mux_time: time := 20 ns;--Periodo para cambiar de display de modo que el ojo no lo perciba 
+signal code : STD_LOGIC_VECTOR (3 downto 0);--señal que gestiona la letra que se ha de mostrar en cada instante en los displays
+--Decoder signal
+signal segment_aux: STD_LOGIC_VECTOR (6 downto 0);
+signal digctrl : STD_LOGIC_VECTOR (4 downto 0); -- encargada de decidir qué display se enciende en cada instante
+signal clk_div: STD_LOGIC; -- reloj con frecuencia menor a la del clk
+
 TYPE secuence is record
     code : std_logic_vector(3 DOWNTO 0);
     led : std_logic_vector(6 DOWNTO 0);
@@ -70,11 +86,6 @@ Constant error: secuence_vector := (
     ("1001", "0001000") --R      
 );
 
-Constant mux_time: time := 20 ns;--Periodo para cambiar de display de modo que el ojo no lo perciba 
-signal code : STD_LOGIC_VECTOR (3 downto 0);--señal que gestiona la letra que se ha de mostrar en cada instante en los displays
---Decoder signal
-signal segment_aux: STD_LOGIC_VECTOR (6 downto 0);
-
 begin
 
 --Decoder Instance
@@ -84,42 +95,35 @@ Decod: Decoder
         code => code,
         led => segment_aux
     );
+-- Divisor de frecuencia Instance
+Div_freq: div_frec
+    port map 
+    (
+        clk => clk,
+        CE_N => '0', --Por el momento no se muy bien qué hacer con esto
+        clk_div => clk_div
+    );
+        
 --Display secuence
 
-display: process
+display: process (clk)
+    variable i: positive := 0;-- Variable que 
     begin
-        digctrl <= (others => '1');--se apagan todos los digctrl antes de empezar
-        if r_or_e = "10" then
-            for i in right'range loop
-                if i /= 0 then
-                    digctrl(i-1) <= '1';
-                end if;
-                code <= right(i).code; --se le asigna en cada iteración un valor del code correpsondiente a una letra
-                digctrl(i) <= '0'; --se activa el
-                --¡¡¡EL ASSERT NO DEBE QUEDARSE AQUÍ, DEBERÍA HACERSE EN EL TB, PERO AL SER ESTAS UNAS SEÑALES INTERNAS NO SE PODRÍA!!!
-                assert segment_aux = right(i).led;
-                    report "[FAILED]: Wrong letter'."
-                    severity failure;
-                segment <= segment_aux;
-                wait for mux_time;--Espera un timepo antes de cambiar
-            end loop;
+        digctrl <= (others => '1'); -- apaga todos los displays
+        if(rising_edge(clk_div)) then
+            digctrl(i) <= '0';
+             if r_or_e = "10" then -- rigth
+                code <= right(i).code; -- lee la letra que debe representar
+             elsif r_or_e = "01" then -- wrong
+                code <= error(i).code; -- lee la letra que debe representar 
+             end if;   
+             if i >= 4 then
+                i := 0;
+             else 
+                i := i + 1; -- se mueve al siguiente
+             end if;
         end if;
-        if r_or_e = "01" then
-            for i in error'range loop
-                if i /= 0 then
-                    digctrl(i-1) <= '1';
-                end if;
-                code <= error(i).code; --se le asigna en cada iteración un valor del code correpsondiente a una letra
-                digctrl(i) <= '0'; --se activa el 
-                wait for mux_time;--Espera un timepo antes de cambiar
-                assert segment_aux = error(i).led;
-                    report "[FAILED]: Wrong letter'."
-                    severity failure;     
-                segment <= segment_aux;
-                wait for mux_time;               
-             end loop;
-        end if;
-        digctrl(3) <= '0';
-        code <= "1111";
 end process;
+digsel <= digctrl; -- se conecta la salida a el led que le corresponde
+
 end Behavioral;
