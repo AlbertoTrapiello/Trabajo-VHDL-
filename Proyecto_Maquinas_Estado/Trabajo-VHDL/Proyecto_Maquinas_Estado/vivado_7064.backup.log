@@ -1,0 +1,283 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Jan 19 16:10:55 2019
+# Process ID: 7064
+# Current directory: C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12052 C:\Users\Fran\Desktop\Trabajo-VHDL--Fran\Proyecto_Maquinas_Estado\Proyecto_Maquinas_Estado.xpr
+# Log file: C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/vivado.log
+# Journal file: C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'D:/../../Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 877.934 ; gain = 134.598
+update_compile_order -fileset sources_1
+close [ open C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd w ]
+add_files C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Div_frec.vhd w ]
+add_files C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Div_frec.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: TOP
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1049.918 ; gain = 114.813
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:48]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_0' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:40]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:44]
+INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "false" *) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'sync' (1#1) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:40]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_1' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:110]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_2' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:116]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_3' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:122]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_4' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:128]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_0' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:134]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_1' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:140]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_2' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:146]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_3' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:152]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_4' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:158]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_reset' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:164]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_mode' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:170]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_start' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:176]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_0' of component 'Debouncer' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'Debouncer' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (2#1) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:42]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_1' of component 'Debouncer' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:190]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_2' of component 'Debouncer' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:197]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_3' of component 'Debouncer' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:204]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_4' of component 'Debouncer' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:211]
+INFO: [Synth 8-3491] module 'Counter' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd:35' bound to instance 'counter_pulsadores' of component 'Counter' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:219]
+INFO: [Synth 8-638] synthesizing module 'Counter' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd:43]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Counter' (3#1) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd:43]
+INFO: [Synth 8-3491] module 'Counter' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd:35' bound to instance 'counter_switches' of component 'Counter' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:227]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'maquina_estados' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Project_FSM.vhd:34' bound to instance 'inst_maq_estados' of component 'maquina_estados' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'maquina_estados' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Project_FSM.vhd:48]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'maquina_estados' (4#1) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Project_FSM.vhd:48]
+INFO: [Synth 8-3491] module 'Display' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd:35' bound to instance 'inst_display' of component 'Display' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:259]
+INFO: [Synth 8-638] synthesizing module 'Display' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd:47]
+INFO: [Synth 8-3491] module 'Decoder' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Decoder.vhd:34' bound to instance 'Decod' of component 'Decoder' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'Decoder' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Decoder.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Decoder' (5#1) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Decoder.vhd:39]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'div_frec' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Div_frec.vhd:33' bound to instance 'Div_freq' of component 'div_frec' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'div_frec' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Div_frec.vhd:40]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'div_frec' (6#1) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Div_frec.vhd:40]
+ERROR: [Synth 8-3512] assigned value '0' out of range [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd:126]
+WARNING: [Synth 8-614] signal 'clk_div' is read in the process but is not in the sensitivity list [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd:114]
+ERROR: [Synth 8-285] failed synthesizing module 'Display' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd:47]
+ERROR: [Synth 8-285] failed synthesizing module 'TOP' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:48]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1105.734 ; gain = 170.629
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+40 Infos, 1 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: TOP
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1105.734 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:48]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_0' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:40]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:44]
+INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "false" *) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'sync' (1#1) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:40]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_1' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:110]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_2' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:116]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_3' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:122]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_4' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:128]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_0' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:134]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_1' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:140]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_2' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:146]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_3' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:152]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_4' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:158]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_reset' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:164]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_mode' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:170]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_start' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:176]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_0' of component 'Debouncer' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'Debouncer' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (2#1) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:42]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_1' of component 'Debouncer' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:190]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_2' of component 'Debouncer' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:197]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_3' of component 'Debouncer' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:204]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_4' of component 'Debouncer' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:211]
+INFO: [Synth 8-3491] module 'Counter' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd:35' bound to instance 'counter_pulsadores' of component 'Counter' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:219]
+INFO: [Synth 8-638] synthesizing module 'Counter' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd:43]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Counter' (3#1) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd:43]
+INFO: [Synth 8-3491] module 'Counter' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd:35' bound to instance 'counter_switches' of component 'Counter' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:227]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'maquina_estados' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Project_FSM.vhd:34' bound to instance 'inst_maq_estados' of component 'maquina_estados' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'maquina_estados' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Project_FSM.vhd:48]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'maquina_estados' (4#1) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Project_FSM.vhd:48]
+INFO: [Synth 8-3491] module 'Display' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd:35' bound to instance 'inst_display' of component 'Display' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:259]
+INFO: [Synth 8-638] synthesizing module 'Display' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd:47]
+INFO: [Synth 8-3491] module 'Decoder' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Decoder.vhd:34' bound to instance 'Decod' of component 'Decoder' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'Decoder' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Decoder.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Decoder' (5#1) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Decoder.vhd:39]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'div_frec' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Div_frec.vhd:33' bound to instance 'Div_freq' of component 'div_frec' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'div_frec' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Div_frec.vhd:40]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'div_frec' (6#1) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Div_frec.vhd:40]
+ERROR: [Synth 8-3512] assigned value '0' out of range [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd:126]
+WARNING: [Synth 8-614] signal 'clk_div' is read in the process but is not in the sensitivity list [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd:114]
+ERROR: [Synth 8-285] failed synthesizing module 'Display' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd:47]
+ERROR: [Synth 8-285] failed synthesizing module 'TOP' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:48]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1105.734 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+40 Infos, 1 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: TOP
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1105.734 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:48]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_0' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:40]
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "true" *) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:44]
+INFO: [Synth 8-5534] Detected attribute (* shreg_extract = "false" *) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'sync' (1#1) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:40]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_1' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:110]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_2' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:116]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_3' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:122]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_p_4' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:128]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_0' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:134]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_1' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:140]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_2' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:146]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_3' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:152]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_s_4' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:158]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_reset' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:164]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_mode' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:170]
+INFO: [Synth 8-3491] module 'sync' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd:34' bound to instance 'inst_sync_start' of component 'sync' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:176]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_0' of component 'Debouncer' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'Debouncer' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (2#1) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:42]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_1' of component 'Debouncer' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:190]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_2' of component 'Debouncer' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:197]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_3' of component 'Debouncer' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:204]
+INFO: [Synth 8-3491] module 'Debouncer' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd:35' bound to instance 'inst_debouncer_p_4' of component 'Debouncer' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:211]
+INFO: [Synth 8-3491] module 'Counter' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd:35' bound to instance 'counter_pulsadores' of component 'Counter' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:219]
+INFO: [Synth 8-638] synthesizing module 'Counter' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd:43]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Counter' (3#1) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd:43]
+INFO: [Synth 8-3491] module 'Counter' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd:35' bound to instance 'counter_switches' of component 'Counter' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:227]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'maquina_estados' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Project_FSM.vhd:34' bound to instance 'inst_maq_estados' of component 'maquina_estados' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'maquina_estados' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Project_FSM.vhd:48]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'maquina_estados' (4#1) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Project_FSM.vhd:48]
+INFO: [Synth 8-3491] module 'Display' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd:35' bound to instance 'inst_display' of component 'Display' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:259]
+INFO: [Synth 8-638] synthesizing module 'Display' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd:47]
+INFO: [Synth 8-3491] module 'Decoder' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Decoder.vhd:34' bound to instance 'Decod' of component 'Decoder' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'Decoder' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Decoder.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Decoder' (5#1) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Decoder.vhd:39]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'div_frec' declared at 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Div_frec.vhd:33' bound to instance 'Div_freq' of component 'div_frec' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'div_frec' [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Div_frec.vhd:40]
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'div_frec' (6#1) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Div_frec.vhd:40]
+WARNING: [Synth 8-614] signal 'clk_div' is read in the process but is not in the sensitivity list [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd:114]
+WARNING: [Synth 8-3848] Net segment in module/entity Display does not have driver. [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Display' (7#1) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (8#1) [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:48]
+WARNING: [Synth 8-3331] design Display has unconnected port segment[6]
+WARNING: [Synth 8-3331] design Display has unconnected port segment[5]
+WARNING: [Synth 8-3331] design Display has unconnected port segment[4]
+WARNING: [Synth 8-3331] design Display has unconnected port segment[3]
+WARNING: [Synth 8-3331] design Display has unconnected port segment[2]
+WARNING: [Synth 8-3331] design Display has unconnected port segment[1]
+WARNING: [Synth 8-3331] design Display has unconnected port segment[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1111.012 ; gain = 5.277
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1111.012 ; gain = 5.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1111.012 ; gain = 5.277
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 7 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1457.781 ; gain = 352.047
+47 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1457.781 ; gain = 352.047
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'digsel[7]'. [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'digsel[6]'. [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'digsel[5]'. [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/constrs_1/imports/practica_3/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 19 18:23:27 2019...

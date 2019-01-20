@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Jan 20 21:38:32 2019
+# Process ID: 7832
+# Current directory: C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10060 C:\Users\Fran\Desktop\Trabajo-VHDL--Fran\Proyecto_Maquinas_Estado\Proyecto_Maquinas_Estado.xpr
+# Log file: C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/vivado.log
+# Journal file: C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.xpr
+update_compile_order -fileset sources_1
+create_project sync C:/Users/Fran/Desktop/sync/sync -part xc7a100tcsg324-1
+set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+file mkdir C:/Users/Fran/Desktop/sync/sync/sync.srcs/sources_1/new
+close [ open C:/Users/Fran/Desktop/sync/sync/sync.srcs/sources_1/new/sync.vhd w ]
+add_files C:/Users/Fran/Desktop/sync/sync/sync.srcs/sources_1/new/sync.vhd
+update_compile_order -fileset sources_1
+file mkdir C:/Users/Fran/Desktop/sync/sync/sync.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Fran/Desktop/sync/sync/sync.srcs/sim_1/new/sync_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/Fran/Desktop/sync/sync/sync.srcs/sim_1/new/sync_tb.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+config_webtalk -user on
+set_property simulator_language VHDL [current_project]
+update_ip_catalog
+launch_simulation
+source sync_tb.tcl
+close_sim
+close_project
