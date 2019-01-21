@@ -1,0 +1,18 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Counter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Debouncer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Div_frec.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity div_frec
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Project_FSM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity maquina_estados
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TOP
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sync
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sim_1/new/top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_tb

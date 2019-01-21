@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd" \
+"../../../../Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd" \
+"../../../../Proyecto_Maquinas_Estado.srcs/sources_1/new/Decoder.vhd" \
+"../../../../Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd" \
+"../../../../Proyecto_Maquinas_Estado.srcs/sources_1/new/Div_frec.vhd" \
+"../../../../Proyecto_Maquinas_Estado.srcs/sources_1/new/Project_FSM.vhd" \
+"../../../../Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd" \
+"../../../../Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd" \
+"../../../../Proyecto_Maquinas_Estado.srcs/sim_1/new/top_tb.vhd" \
+
+# Do not sort compile order
+nosort

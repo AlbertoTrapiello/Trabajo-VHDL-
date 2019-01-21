@@ -1,8 +1,0 @@
-Vivado Simulator 2018.2
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 927389d1dd154c688ace0c7ee32481c9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Display_tb_behav xil_defaultlib.Display_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-122] decoder remains a black-box since it has no binding entity [D:/Universidad/Cuarto/SED/Trabajo SED VHDL/Trabajo-VHDL-/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd:81]
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Jan 20 22:45:23 2019
+# Process ID: 2036
+# Current directory: C:/Users/Fran/Desktop/Trabajo-VHDL/Proyecto_Maquinas_Estado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3668 C:\Users\Fran\Desktop\Trabajo-VHDL\Proyecto_Maquinas_Estado\Proyecto_Maquinas_Estado.xpr
+# Log file: C:/Users/Fran/Desktop/Trabajo-VHDL/Proyecto_Maquinas_Estado/vivado.log
+# Journal file: C:/Users/Fran/Desktop/Trabajo-VHDL/Proyecto_Maquinas_Estado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Fran/Desktop/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Fran/Desktop/Trabajo-VHDL--Fran/Proyecto_Maquinas_Estado' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'D:/../../Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 867.656 ; gain = 130.582
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 20 22:46:48 2019...

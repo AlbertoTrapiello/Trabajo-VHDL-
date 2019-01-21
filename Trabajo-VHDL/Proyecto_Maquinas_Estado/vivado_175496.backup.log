@@ -1,0 +1,121 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jan 21 16:19:58 2019
+# Process ID: 175496
+# Current directory: C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent172884 C:\Users\petra\Desktop\Nueva carpeta\Trabajo-VHDL\Proyecto_Maquinas_Estado\Proyecto_Maquinas_Estado.xpr
+# Log file: C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/vivado.log
+# Journal file: C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:13 . Memory (MB): peak = 823.402 ; gain = 139.078
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property -name {xsim.simulate.runtime} -value {100ns} -objects [get_filesets sim_1]
+update_ip_catalog
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sim_1/new/top_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_ip_catalog
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Counter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Debouncer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Debouncer
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Display.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Display
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Div_frec.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity div_frec
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/Project_FSM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity maquina_estados
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/TOP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TOP
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sources_1/new/sync.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sync
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.srcs/sim_1/new/top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto a95258d9c34f4379a366762958613ea8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.sync [sync_default]
+Compiling architecture behavioral of entity xil_defaultlib.Debouncer [debouncer_default]
+Compiling architecture behavioral of entity xil_defaultlib.Counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.maquina_estados [maquina_estados_default]
+Compiling architecture dataflow of entity xil_defaultlib.Decoder [decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.div_frec [\div_frec(n=50000)\]
+Compiling architecture behavioral of entity xil_defaultlib.Display [display_default]
+Compiling architecture behavioral of entity xil_defaultlib.TOP [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_tb
+Built simulation snapshot top_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/petra/Desktop/Nueva -notrace
+couldn't read file "C:/Users/petra/Desktop/Nueva": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Mon Jan 21 16:24:05 2019...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 883.148 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/petra/Desktop/Nueva carpeta/Trabajo-VHDL/Proyecto_Maquinas_Estado/Proyecto_Maquinas_Estado.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_tb_behav -key {Behavioral:sim_1:Functional:top_tb} -tclbatch {top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 894.918 ; gain = 11.770
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 898.738 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 21 16:49:58 2019...
